@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" href="index.css">
+
+  
+</head>
+<body onmousemove="mostrarMouse(event)">
+   
+    <div class="telaDeMorte">
+        <h1>Você Morreu!</h1>
+
+        <h2 class="nivelMorte">Nível alcançado:</h2>
+
+        <h2 class="tempoMorte">Tempo de jogo:</h2>
+
+        <h2 class="jogarNovamente" onclick="jogarNovamente()">Jogar Novamente</h2>
+        
+    </div>
+
+    <div class="telaDeVitoria">
+        <h1>Parabens!</h1>
+
+        <h2 class="nivelVitoria">Você completou o Nível: </h2>
+
+        <h2 class="tituloMelhorar">Escolha um atributo para melhorar!</h2>
+        
+        <div class="aprimorar">
+
+        <input type="radio" name="Aprimorar" id="aprimorar1" checked>Vida <br>
+        <input type="radio" name="Aprimorar" id="aprimorar2">Velocidade <br>
+        <input type="radio" name="Aprimorar" id="aprimorar3">Dano 
+
+        </div>
+       
+        <div class="continuar" onclick="continuar()">Evoluir e Continuar</div>
+
+    </div>
+   
+    <header>
+        <nav>
+            <ul class="ulHead">
+                <li class="nivel head">Nível: 0</li>
+                <li class="vidaPlayer head">Vida: 0</li>
+                <li class="tempo head">Tempo: 00:00</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section >
+    
+        <div class="player">player</div>
+
+        <div class="mira"></div>
+
+        <div class="inimigo inimigo0">inimigo</div>
+        <div class="inimigo inimigo1">inimigo</div>
+        <div class="inimigo inimigo2">inimigo</div>
+        <div class="inimigo inimigo3">inimigo</div>
+        <div class="inimigo inimigo4">inimigo</div>    
+
+    </section>
+
+    <aside>
+        <h1>Tutorial</h1>
+        <p>W = Cima<br><br>S = Baixo<br><br>A = Esqueda<br><br>D = Direita<br><br>
+        Botão esquerdo do mouse = Tiro<br><br><br><br>Movimente-se dentro do retângulo
+        branco e evite encostar o quadrado azul(Player) no quadrado vermelho(Inimigo).<br><br>
+        Ao atirar o campo de dano na cor amarela fica ativo por 3 segundos, caso algum
+        Inimigo passe por esse campo ele sofrerá dano.<br><br> Seu objetivo é eliminar todos os
+        Inimigos para passar de nível.<br><br> Conforme for aumentando os níveis vai aparecer
+        mais inimigos com mais velocidade e mais resistência.
+        </p>
+
+    </aside>
+
+    <footer>
+
+        <h3>Criador Roldezir Zacarias da Silva Junior </br>
+        Instagram: @roldezirzacarias & @rztech_informatica</h3>
+
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
